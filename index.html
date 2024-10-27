@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
+        100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;
+        1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <h2> To-Do List <img src="image/icon.png" alt=""></h2>
+        <div class="raw">
+            <input type="text" id="new-task" placeholder="What needs to be done?">
+            <button class="btn" onclick="addTask()">Add</button>
+        </div>
+        <div id="tasks"> </div>
+
+        <div class="footer">
+            <span id="items-left">0 items left</span>
+            <div class="filters">
+                <button id="filter-all" onclick="filterTasks('all')">All</button>
+                <button id="filter-active" onclick="filterTasks('active')">Active</button>
+                <button id="filter-completed" onclick="filterTasks('completed')">Completed</button>
+                <button id="clear-completed" onclick="clearCompletedTasks()">Clear completed</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

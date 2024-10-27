@@ -1,0 +1,152 @@
+body {
+    font-family: "Roboto", sans-serif ;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    color: #333;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bb3239, #3ca5d6);
+    padding: 10px;
+    margin-top: 80px;
+}
+
+#app {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.raw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+input[type="text"].error {
+    border-color: red;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: #888;
+    
+}
+
+.task button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 17px 50px;
+    background: #ff594f;
+    color: #ffff;
+    font-size: 20px;
+    cursor: pointer;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 10px;
+ 
+}
+ h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+#tasks{
+    font-size: 14px;
+  
+    
+}
+.filters button {
+    margin: 0 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.filters button.active {
+    font-weight: bold;
+    color: #333;
+    
+}
+
+#clear-completed {
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+.task input[type="checkbox"] {
+    width: 80px; 
+    height: 20px; 
+    vertical-align: middle;
+    margin-right:s 10px; 
+   
+}
+
+.filters button:hover{
+color: #90169b;
+
+}
+
+#clear-completed:hover{
+    color: #90169b;
+}
+
+
+@media (max-width: 400px) {
+    #app {
+        padding: 10px;
+        font-size: 16px;
+        
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 15px;
+        flex-direction: column;
+    }
+}
